@@ -6,14 +6,25 @@
     <title>Jonthan.me</Jonthan></title>
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!--Animate.css-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Fonts-->
+    <!--Oswald font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> 
+    <!--Quicksand font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!--CSS Custom-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+   
     <div class="menu-btn">
         <i class="fas fa-bars fa-2x"></i>
     </div>
@@ -132,22 +143,31 @@
             <a href="#" class="btn">Contact me <i class="fas fa-angle-double-right"></i></a>
         </div>
     </section>
-    <div class="">
+    <div class="animate__animated animate__shakeYe animate__repeat-2">
         <section class="social">
             <p>Follow me on my social media</p>
-            <div class="links">
-                <a href="#">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-reddit"></i>
-                </a>
+            <div class="columns-links">
+
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/jonathan-r%C3%B3denas-l%C3%B3pez-45400115a/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/Baronhez">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="links">
+                    <a href="https://twitter.com/Baronhez1">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="links">
+                    <a href="https://www.reddit.com/user/Baronhez">
+                        <i class="fab fa-reddit"></i>
+                    </a>
+                </div>
             </div>
         
         </section>
@@ -155,6 +175,7 @@
     </div>
     <div class="footerlinks">
         <div class="footercontainer">
+            
             <ul>
                 <li>
                     <a href="#">
@@ -173,13 +194,9 @@
                 <li>
                     <a href="#">Blockchain</a>
                 </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
+               
             </ul>
+            
             <ul>
                 <li>
                     <a href="#">
@@ -198,68 +215,69 @@
                 <li>
                     <a href="#">Blockchain</a>
                 </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
-                <li>
-                    <a href="#">Blockchain</a>
-                </li>
+                
             </ul>
         </div>
-    </div>    
+    </div> 
+    
+    <!--Contact form-->
+    <div class="form">
+        <h1 class="contact">Contact <span>Me</span></h1>
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h3>Fill this form to contact me:</h3>
+                <form action="">
+                    <p>
+                        <label for="fullname">Fullname</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </p>
+                    <p>
+                        <label>Email address</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label for="phone">Enter your phone number:</label>
+
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+
+                        <small>Example format: 123-456-789</small>
+                    </p>
+                    <p>
+                        <label>Affair</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                        <label>Message</label>
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Send your form!
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>More Contact Info:</h4>
+                <ul>
+                    <li><i class="fas fa-street-view"> Calle Pintor Ángel Martínez Nº14 1ºIzq</i></li>
+                    <li><i class="fas fa-phone"> 634779600</i></li>
+                    <li><i class="fas fa-at"> jonathanrodenaslopez1@gmail.com</i></li>
+                </ul>
+                <p id="Cita">"No pidas una vida más fácil, pide ser una persona más fuerte"</p>
+                <p id="Nombre_Cita">Cole Mcgrath</p>
+            </div>
+            <div class="contact-info">
+
+            </div>
+        </div>
+    </div>
+    <!--Copyfighter footer-->
     <footer class="footer">
         <h3>Jonthan.me Copyright <i class="fas fa-copyright"></i></h3>
     </footer> 
-    <script src="main.js"></script>   
+    <!--Main Javascript-->
+    <script src="main.js"></script> 
+      
 </body>
 </html>
