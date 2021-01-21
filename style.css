@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
     font-family: 'Oswald', sans-serif;
     background: #000000;
@@ -11,6 +14,18 @@ body{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     font-size: 16px;
     
+}
+
+/*Avatar*/
+.avatar {
+  
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  width: 100px;
+  height: auto;
+  border-radius: 60%;
+  margin-bottom: auto;
 }
 
 /*Links*/
@@ -57,7 +72,7 @@ hr{
 .showcase{
     width: 100%;
     height: 550px;
-    background: url(./Images/Barqueroenlanoche.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Images/Puerta.png) no-repeat center center/cover;
     padding: 50px;
     margin-bottom: 20px;
     display: flex;
@@ -66,6 +81,10 @@ hr{
     align-items: center;
     justify-content: flex-end;
     color: #fff;
+}
+.showcase h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
 }
 /*Life cards*/
 .life-cards{
@@ -176,7 +195,7 @@ hr{
     padding: 200px 10px 0 69px;
     color: #0b0d0c;
 }
-/*Social*/
+/*Social Networks*/
 .social{
     margin: 50px;
 }
@@ -203,6 +222,47 @@ hr{
     padding: 40px;
     font-size: 5rem;
 }
+#myBtn {
+  /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #b70e21; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color:  #d63031; /* Add a dark-grey background on hover */
+  transition: background-color 0.5s ease-out;
+}
+/*Slider*/
+.slider img{
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.align-img{
+    width: 100%;
+    height: auto;
+    background-size:cover
+}
+
+@supports(object-fit: cover){
+.align-img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+}
+
 /*Footer links*/
 .footerlinks{
     background: #2f3640;
@@ -326,7 +386,25 @@ hr{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
 }
-
+.scrolltoTop{
+     /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #b70e21; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  opacity: 0.7;
+}
+.scrolltoTop:hover {
+  background-color: #d63031; /* Add a dark-grey background on hover */
+}
 
 @media (min-width: 700px){
 .form{

@@ -6,6 +6,10 @@
     <title>Jonthan.me</Jonthan></title>
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!--jQuery Slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <!--Animate.css-->
     <link
     rel="stylesheet"
@@ -24,7 +28,7 @@
 </head>
 <body>
 
-   
+    
     <div class="menu-btn">
         <i class="fas fa-bars fa-2x"></i>
     </div>
@@ -57,14 +61,18 @@
             </ul>
         </nav>
         <hr>
+        <!--Avatar-->
+         
         <!--Main header-->
         <header class="showcase">
             <h2>Jonathan Ródenas López</h2>
+            <img src="/Images/Jonathan.jpg" alt="Avatar" class="avatar"> 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit asperiores tenetur soluta natus modi accusamus delectus amet deleniti atque provident ab minima adipisci iusto, nisi sint quia, vitae voluptatum! Aliquam.</p>
             <a href="#" class="btn">Read more about me<i class="fas fa-angle-double-right"></i></a>
         </header>
+
         <!--Life sections-->
-    <div class="life-cards">
+        <div class="life-cards">
         <!--Personal data-->
         <div>
             <img src="./Images/Solving problems.png" alt="Personal data">
@@ -95,17 +103,17 @@
         </div>
     
     
-    </div>
-    <!--Banner for presentation-->
-    <section class="cards-banner-one">
+        </div>
+     <!--Banner for presentation-->
+     <section class="cards-banner-one">
         <div class="content">
             <h2>Lorem, ipsum dolor.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos libero amet nulla non saepe sunt quos iusto fuga ea quo?</p>
             <a href="#" class="btn">What can I do for your company? <i class="fas fa-angle-double-right"></i></a>
         </div>
         
-    </section>
-    <div class="life-cards">
+     </section>
+     <div class="life-cards">
         <!--What can I do for the company-->
         <!--Photoshop-->
         <div>
@@ -135,15 +143,15 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
             <a href="#">Ampliar<i class="fas fa-angle-double-right"></i></a>
         </div>
-    </div>
-    <section class="cards-banner-two">
+     </div>
+     <section class="cards-banner-two">
         <div class="content">
             <h2>Lorem, ipsum dolor.</h2>
             <p>Lorem ipsum dolor sit amet.</p>
             <a href="#" class="btn">Contact me <i class="fas fa-angle-double-right"></i></a>
         </div>
-    </section>
-    <div class="animate__animated animate__shakeYe animate__repeat-2">
+     </section>
+     <div class="animate__animated animate__shakeYe animate__repeat-2">
         <section class="social">
             <p>Follow me on my social media</p>
             <div class="columns-links">
@@ -169,10 +177,25 @@
                     </a>
                 </div>
             </div>
-        
+            <p>Check my Art!</p>
         </section>
     
     </div>
+
+    <!-- SLIDER -->
+    <div id="slide-wrap">
+        <section class="slider">
+          <ul class="slider1">
+            <li class="align-img"><img src="Images/sliders/Ángel en el bosque.jpg" alt=""></li>
+            <li class="align-img"><img src="Images/sliders/Barqueroenlanoche.jpg" alt=""></li>
+            <li class="align-img"><img src="Images/sliders/Druida.jpg" alt=""></li>
+            <li class="align-img"><img src="Images/sliders/Busto.jpg" alt=""></li>
+            <li><img src="Images/sliders/Alicia.jpg" alt=""></li>
+          </ul>
+        </section>
+    </div>
+    <!--Footerlinks-->
+
     <div class="footerlinks">
         <div class="footercontainer">
             
@@ -264,7 +287,7 @@
                     <li><i class="fas fa-phone"> 634779600</i></li>
                     <li><i class="fas fa-at"> jonathanrodenaslopez1@gmail.com</i></li>
                 </ul>
-                <p id="Cita">"No pidas una vida más fácil, pide ser una persona más fuerte"</p>
+                <p id="Cita">"Don't ask to have an easier life, but to be a stronger person."</p>
                 <p id="Nombre_Cita">Cole Mcgrath</p>
             </div>
             <div class="contact-info">
@@ -272,12 +295,34 @@
             </div>
         </div>
     </div>
-    <!--Copyfighter footer-->
+    <!--Copyright footer-->
     <footer class="footer">
         <h3>Jonthan.me Copyright <i class="fas fa-copyright"></i></h3>
     </footer> 
     <!--Main Javascript-->
-    <script src="main.js"></script> 
+    <script src="main.js"></script>
+    <!-- SCRIPTS SLIDER -->
+  
+  <script>
+    $(document).ready(function(){
+      $('.slider1').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider2').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider3').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider4').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider5').bxSlider({
+        mode: 'fade',
+      });
+    });
+    </script> 
       
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
 </body>
 </html>
