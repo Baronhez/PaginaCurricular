@@ -1,10 +1,22 @@
 document.querySelector('.menu-btn').addEventListener('click', () => {
     document.querySelector('.nav-menu').classList.toggle('show');
 });
+$(document).ready(function(){
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 400) {
+    $('.elementToFadeInAndOut').fadeIn();
+  } else {
+    $('.elementToFadeInAndOut').fadeOut();
+  }
+});
+});
 
 ScrollReveal().reveal('.showcase');
 ScrollReveal().reveal('.life-cards', { delay: 250 });
 ScrollReveal().reveal('.cards-banner-one', { delay: 250 });
+ScrollReveal().reveal('.cards-banner-two', { delay: 250 });
+ScrollReveal().reveal('.cards-banner-two', { delay: 250 });
 ScrollReveal().reveal('.cards-banner-two', { delay: 250 });
 
 /*Button to go top*/
@@ -26,5 +38,4 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-} 
-
+}

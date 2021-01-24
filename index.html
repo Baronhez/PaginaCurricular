@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonthan.me</Jonthan></title>
     <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!--jQuery Slider-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -321,8 +322,23 @@
         mode: 'fade',
       });
     });
-    </script> 
-      
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+    </script>
+    
+    <!--GoUp Button-->
+    <div class="elementToFadeInAndOut">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span>Up!</span></button> 
+    </div>
+    <script type="text/javascript">
+        function Mostrar(){
+            document.getElementById("myBtn").style.display = "block";
+        }
+        function Ocultar(){
+            document.getElementById("myBtn").style.display = "none";
+        }
+        function Mostrar_Ocultar(){
+            var go_up = document.getElementById("myBtn");
+            /*Check if it is in the top, if it is not, display = Block, but if it is in Top, display = None*/
+        }
+    </script>
 </body>
 </html>
