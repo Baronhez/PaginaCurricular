@@ -3,6 +3,86 @@
     margin: 0;
     padding: 0;
 }
+
+/*LOADER
+Credits to Tashfeen for his creation*/
+
+
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: #242f3f;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  
+  top: 50%;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 0.9s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}
+
+
+
+
+/*My CSS*/
 html {
   scroll-behavior: smooth;
 }
@@ -15,6 +95,10 @@ body{
     font-size: 16px;
     
 }
+
+
+
+
 
 /*Avatar*/
 .avatar {
@@ -38,16 +122,41 @@ ul{
     list-style: none;
 }
 
-.container{
+.ccontainer{
     background-color: #0b0d0c;
-    border-radius: 1%;
     width: 95%;
     margin: auto;
     
 }
 
-
 /*Navigation*/
+#nav1{
+    opacity: 0.9;
+ 
+    background-color:#b70e21;
+    
+  
+}
+#navbarNavDropdown ul li span a{
+    color: #ffffff;
+}
+#navbarNavDropdown ul li span a:hover{
+    color: #ffffff;
+    font-weight: bold;
+}
+#navbarDropdownMenuLink{
+    color: #ffffff;
+}
+#navbarDropdownMenuLink:hover{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.dropdown-item{
+    color: #ffffff;
+}
+/*Provisional Navigation*/
+/*
 .nav-main{
     font-size: 17px;
     display: flex;
@@ -60,18 +169,19 @@ ul{
 .nav-brand{
     width: 50px;
 }
+*/
 /*Main header*/
 hr{
     margin: 10px 0;
 }
 
-/*Botón móvil*/
+
 
 
 
 .showcase{
     width: 100%;
-    height: 550px;
+    height: 945px;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Images/Puerta.png) no-repeat center center/cover;
     padding: 50px;
     margin-bottom: 20px;
@@ -92,10 +202,12 @@ hr{
     grid-template-columns: repeat(4, 1fr);
     margin: 90px 10px;
     gap: 25px;
+    height: 1100px;
+   
 }
 .life-cards img{
     width: 100%;
-    height: 180px;
+    height: 210px;
     gap: 25px;
 }
 .life-cards h3{
@@ -128,6 +240,7 @@ hr{
 
 .btn:hover{
     opacity: .7;
+    color: #ffffff;
 }
 .showcase h2, .showcase p{
     margin-bottom: 10px;
@@ -137,6 +250,7 @@ hr{
     margin-top: 20px;
   }
 /*Nav Left*/
+/*
 .nav-main ul{
     display: flex;
 }
@@ -147,8 +261,9 @@ hr{
     flex: 1;
     margin-left: 20px;
 }
-
+*/
 .menu-btn{
+    
     cursor: pointer;
     position: absolute;
     top: 15px;
@@ -156,18 +271,18 @@ hr{
     z-index: 2;
     display: none; 
 }
-
+/*
 .nav-main ul li a{
     padding: 6px;
 }
 .nav-main ul li a:hover{
     border-bottom: 2px solid #ffffff;
 }
-
+*/
 /*Cards banner one*/
 .cards-banner-one{
     width: 100%;
-    height: 350px;
+    height: 1000px;
     background: url(./Images/chairs-2181960_1920.jpg) no-repeat center center/cover;
     margin-bottom: 40px;
     
@@ -175,8 +290,9 @@ hr{
 
 .cards-banner-one .content{
     width: 40%;
-    padding: 200px 10px 0 69px;
-    color: #0b0d0c;
+    padding: 770px 10px 0 69px;
+    color: #ffffff;
+    font-weight: bolder;
 }
 
 .cards-banner-one p, .cards-banner-one h2{
@@ -187,13 +303,14 @@ hr{
 
 .cards-banner-two{
     width: 100%;
-    height: 350px;
+    height: 1000px;
     background: url(./Images/samsung-memory-NpejFvfVjZw-unsplash.jpg) no-repeat center center/cover;
 }
 .cards-banner-two .content{
     width: 50%;
-    padding: 200px 10px 0 69px;
+    padding: 750px 10px 0 69px;
     color: #0b0d0c;
+    font-weight: bolder;
 }
 /*Social Networks*/
 .social{
@@ -217,6 +334,21 @@ hr{
 .links a{
     
     margin:10 50px;
+}
+#linkedin:hover{
+    color: #0e76a8;
+}
+
+
+#github:hover{
+    color: #f2f2f2;
+}
+
+#twitter:hover{
+    color: #00acee;
+}
+#reddit:hover{
+    color:#FF5700;
 }
 .links a i{
     padding: 40px;
@@ -256,6 +388,7 @@ hr{
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
 }
 
@@ -274,7 +407,7 @@ hr{
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
+  right: -15px;
   transition: 0.5s;
 }
 
@@ -320,6 +453,7 @@ hr{
     color: #616161;
     font-size: 12px;
     padding: 35px 0;
+    text-align: center;
 }
 
 .footercontainer{
@@ -334,10 +468,21 @@ hr{
     margin: 0 auto;
 
 }
+.footercontainer ul li h3{
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
 .footercontainer ul li:hover{
     text-decoration: #ffffff;
     font-weight: bold;
+    text-align: center;
 }
+
+.footercontainer ul li a:hover{
+    color: #ffffff;
+}
+
 
 .footer{
     background: #2f3640;
@@ -414,6 +559,9 @@ hr{
 
 .contact-info{
     background: #000;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .contact-info h4,
 .contact-info ul,
@@ -488,14 +636,15 @@ hr{
 }
 }
 @media (max-width: 700px){
-
+   
 
     .menu-btn{
         display: block;
     }
     .menu-btn:hover{
         opacity: .5;
-    }   
+    } 
+    /*  
     .nav-main ul.nav-menu{
         display: block;
         position: absolute;
@@ -527,12 +676,13 @@ hr{
     .nav-main ul.nav-menu-right{
         margin-right: 50px;
     }
-
+    */
     .life-cards{
         grid-template-columns: repeat(2,1fr);
+        height: 80%;
     }
     
-    .cards-banner-one .content, 
+  
     .cards-banner-two .content{
         width: 80%;
     }
@@ -549,9 +699,28 @@ hr{
         grid-template-columns: 1fr 1fr;
     }
 }
+@media (max-width: 1050px) {
+
+    .cards-banner-one .content{
+        width: 100%;
+        padding: 790px 20px 5px 10px;
+        color: #ffffff;
+        font-weight: bolder;
+    }       
+    .cards-banner-two .content {
+        width: 100%;
+        padding: 750px 20px;
+        color: #ffffff;
+        font-weight: bold;
+      }
+    
+   
+    
+}
 @media (max-width: 500px) {
     .life-cards {
       grid-template-columns: 1fr;
+      height: 0%;
     }
     .life-cards img{
         height: 270px;
@@ -562,11 +731,14 @@ hr{
     }
     .cards-banner-one .content{
         width: 100%;
-        padding: 185px 20px 5px 10px;
+        padding: 750px 20px 5px 10px;
+        color: #ffffff;
     }
     .cards-banner-two .content {
       width: 100%;
-      padding: 230px 20px;
+      padding: 750px 20px;
+      color: #ffffff;
+      font-weight: bold;
     }
     .footer-links .footer-container {
       grid-template-columns: 1fr;
@@ -575,4 +747,5 @@ hr{
     .footer-links .footer-container ul {
       text-align: center;
     }
+    
 }

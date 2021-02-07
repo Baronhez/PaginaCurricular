@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonthan.me</Jonthan></title>
+    <meta name="description" content="Personal page of Jonathan Ródenas López">
+    <meta name="Author" content="Jonathan Ródenas López">
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
@@ -16,6 +18,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Fonts-->
+    
     <!--Oswald font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> 
@@ -25,16 +28,40 @@
     <!--Scroll Reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--CSS Custom-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    
+    
+    
 </head>
 <body>
-
-    
-    <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
+    <!--LOADER-->
+    <!--Credits to Tashfeen for his creation-->
+    <div class="loader-wrapper">
+            <!-- Loading square for squar.red network -->
+        <span class="loader"><span class="loader-inner"></span></span>
     </div>
 
-    <div class="container">
+
+
+
+
+
+<!-- My Web page-->
+    
+    
+<!--Main container I did all the webpage inside a container because I wanted a cool pattern to be my webpage background-->
+    <div class="ccontainer">
+        <!--Provisional navbar Bar button-->
+        
+        <div class="menu-btn">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        
+        
+    <!--Provisional navbar-->
+    <!--
         <nav class="nav-main">
             <img src="./Images/Jonathan.jpg" alt="Foto personal" class="nav-brand">
             <ul class="nav-menu show">
@@ -61,6 +88,7 @@
                 </li>
             </ul>
         </nav>
+        -->
         <hr>
         <!--Avatar-->
          
@@ -69,38 +97,80 @@
             <h2>Jonathan Ródenas López</h2>
             <img src="/Images/Jonathan.jpg" alt="Avatar" class="avatar"> 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit asperiores tenetur soluta natus modi accusamus delectus amet deleniti atque provident ab minima adipisci iusto, nisi sint quia, vitae voluptatum! Aliquam.</p>
-            <a href="#" class="btn">Read more about me<i class="fas fa-angle-double-right"></i></a>
+            <a href="#Life" class="btn">Read more about me <i class="fas fa-angle-double-right"></i></a>
         </header>
-
+        <!--Bootstrap navbar-->
+        
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark" id="nav1">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar Provisional Until Designed content</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <span><a class="nav-link"  href="#">Home</a></span>
+                  </li>
+                  <li class="nav-item">
+                    <span><a class="nav-link " href="#Life">Studies and degrees</a></span>
+                  </li>
+                  <li class="nav-item">
+                    <span><a class="nav-link" href="#Knowledge">Knowledge</a></span>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick='NORMAL_BOLDER'>
+                      Social Media
+                    </a>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#https://www.linkedin.com/jonathan-r%C3%B3denas-l%C3%B3pez-45400115a/">Linkedin <i class="fab fa-linkedin"></i></a></li>
+                      <li><a class="dropdown-item" href="https://github.com/Baronhez">Github <i class="fab fa-github-alt"></i></a></li>
+                      <li><a class="dropdown-item" href="https://twitter.com/Baronhez1">Twitter <i class="fab fa-twitter"></i></a></li>
+                      <li><a class="dropdown-item" href="https://www.reddit.com/user/Baronhez">Reddit <i class="fab fa-reddit-alien"></i></a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <span><a class="nav-link" href="#slide-wrap">Art</a></span>
+                  </li>
+                  <li class="nav-item">
+                    <span><a class="nav-link" href="#footerc">References</a></span>
+                  </li>
+                  <li class="nav-item">
+                    <span><a class="nav-link" href="#mailform">Form</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <!--Life sections-->
-        <div class="life-cards">
+        <div class="life-cards" id="Life">
         <!--Personal data-->
         <div>
             <img src="./Images/Solving problems.png" alt="Personal data">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar<i class="fas fa-angle-double-right"></i></a>
+            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
         </div>
         <!--Education-->
         <div>
             <img src="./Images/Graduation 2020.png" alt="Education">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar<i class="fas fa-angle-double-right"></i></a>
+            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
         </div>
         <!--Certificates-->
         <div>
             <img src="./Images/Successful completion of project.png" alt="Certificates">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar<i class="fas fa-angle-double-right"></i></a>
+            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
         </div>
         <!--Work skills-->
         <div>
             <img src="./Images/Design collaboration.png" alt="Work skills">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar<i class="fas fa-angle-double-right"></i></a>
+            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
         </div>
     
     
@@ -110,70 +180,71 @@
         <div class="content">
             <h2>Lorem, ipsum dolor.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos libero amet nulla non saepe sunt quos iusto fuga ea quo?</p>
-            <a href="#" class="btn">What can I do for your company? <i class="fas fa-angle-double-right"></i></a>
+            <a href="#Knowledge" class="btn">What can I do for your company? <i class="fas fa-angle-double-right"></i></a>
         </div>
         
      </section>
-     <div class="life-cards">
+     <section id="Knowledge"></section>
+     <div class="life-cards" >
         <!--What can I do for the company-->
         <!--Photoshop-->
         <div>
             <img src="./Images/In-House Finance Professional.png" alt="Photoshop">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar<i class="fas fa-angle-double-right"></i></a>
+            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
         </div>
         <!--Certificates-->
         <div>
             <img src="./Images/Document Collaboration.png" alt="Vida Personal">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar<i class="fas fa-angle-double-right"></i></a>
+            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
         </div>
         <!--Work skills-->
         <div>
             <img src="./Images/Writing a Blog.png" alt="Vida Personal">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar<i class="fas fa-angle-double-right"></i></a>
+            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
         </div>
         <!--Contact data-->
         <div>
             <img src="./Images/Code Version Control.png" alt="Vida Personal">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar<i class="fas fa-angle-double-right"></i></a>
+            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
         </div>
      </div>
      <section class="cards-banner-two">
         <div class="content">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <a href="#" class="btn">Contact me <i class="fas fa-angle-double-right"></i></a>
+            <h2>How am I?</h2>
+            <p>This is what I do in my free time.</p>
+            <a href="#SocialMedia" class="btn">Take a look <i class="fas fa-angle-double-right"></i></a>
         </div>
      </section>
      <div class="animate__animated animate__shakeYe animate__repeat-2">
-        <section class="social">
+        <section id="SocialMedia" class="social">
             <p>Follow me on my social media</p>
             <div class="columns-links">
 
                 <div class="links">
-                    <a href="https://www.linkedin.com/in/jonathan-r%C3%B3denas-l%C3%B3pez-45400115a/">
+                    <a id="linkedin" href="https://www.linkedin.com/in/jonathan-r%C3%B3denas-l%C3%B3pez-45400115a/">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
-                <div class="links">
-                    <a href="https://github.com/Baronhez">
+                <div  class="links">
+                    <a id="github" href="https://github.com/Baronhez">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
                 <div class="links">
-                    <a href="https://twitter.com/Baronhez1">
+                    <a id="twitter" href="https://twitter.com/Baronhez1">
                         <i class="fab fa-twitter"></i>
                     </a>
                 </div>
                 <div class="links">
-                    <a href="https://www.reddit.com/user/Baronhez">
+                    <a id="reddit" href="https://www.reddit.com/user/Baronhez">
                         <i class="fab fa-reddit"></i>
                     </a>
                 </div>
@@ -187,51 +258,47 @@
     <div id="slide-wrap">
         <section class="slider">
           <ul class="slider1">
-            <li class="align-img"><img src="Images/sliders/Ángel en el bosque.jpg" alt=""></li>
-            <li class="align-img"><img src="Images/sliders/Barqueroenlanoche.jpg" alt=""></li>
-            <li class="align-img"><img src="Images/sliders/Druida.jpg" alt=""></li>
-            <li class="align-img"><img src="Images/sliders/Busto.jpg" alt=""></li>
+            <li class="align-img"><img src="Images/sliders/Ángeldelbosqueajustado.jpg" alt=""></li>
+            <li class="align-img"><img src="Images/sliders/Barqueroenlanocheajustado.jpg" alt=""></li>
+            <li class="align-img"><img src="Images/sliders/Druidaajustado.jpg" alt=""></li>
+            <li class="align-img"><img src="Images/sliders/Bustoajustado.jpg" alt=""></li>
             <li><img src="Images/sliders/Alicia.jpg" alt=""></li>
           </ul>
         </section>
     </div>
     <!--Footerlinks-->
 
-    <div class="footerlinks">
+    <div class="footerlinks" id="footerc">
         <div class="footercontainer">
             
             <ul>
                 <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
+                    <h3>Digital References</h3>  
                 </li>
                 <li>
-                    <a href="#">Blockchain</a>
+                    <a href="#">Hidrogea</a>
                 </li>
                 <li>
-                    <a href="#">Blockchain</a>
+                    <a href="#">IDIES</a>
                 </li>
                 <li>
-                    <a href="#">Blockchain</a>
+                    <a href="#">Science congress 2018</a>
                 </li>
                 <li>
-                    <a href="#">Blockchain</a>
+                    <a href="#">Web Page Reference</a>
                 </li>
                
             </ul>
             
             <ul>
                 <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
+                    <h3>Paper References</h3>
                 </li>
                 <li>
-                    <a href="#">Blockchain</a>
+                    <a href="#">My own curriculum</a>
                 </li>
                 <li>
-                    <a href="#">Blockchain</a>
+                    <a href="#">Investigation bachelor, final project</a>
                 </li>
                 <li>
                     <a href="#">Blockchain</a>
@@ -243,9 +310,16 @@
             </ul>
         </div>
     </div> 
+
+    <!--Knowledge chart-->
     
+    
+<!-- <input type="checkbox" id="check0" class="checkbox" checked/>check1
+<input type="checkbox" id="check1" class="checkbox" checked/>check2 -->
+
+
     <!--Contact form-->
-    <div class="form">
+    <div class="form" id="mailform">
         <h1 class="contact">Contact <span>Me</span></h1>
         <div class="contact-wrapper">
             <div class="contact-form">
@@ -292,10 +366,12 @@
                 <p id="Nombre_Cita">Cole Mcgrath</p>
             </div>
             <div class="contact-info">
-
+                <h4>I will anwser you as soon as possible.</h4>
             </div>
         </div>
     </div>
+
+
     <!--Copyright footer-->
     <footer class="footer">
         <h3>Jonthan.me Copyright <i class="fas fa-copyright"></i></h3>
@@ -328,17 +404,31 @@
     <div class="elementToFadeInAndOut">
         <button onclick="topFunction()" id="myBtn" title="Go to top"><span>Up!</span></button> 
     </div>
-    <script type="text/javascript">
-        function Mostrar(){
-            document.getElementById("myBtn").style.display = "block";
-        }
-        function Ocultar(){
-            document.getElementById("myBtn").style.display = "none";
-        }
-        function Mostrar_Ocultar(){
-            var go_up = document.getElementById("myBtn");
-            /*Check if it is in the top, if it is not, display = Block, but if it is in Top, display = None*/
-        }
+    <!--Loader script-->
+    <script>
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+        })
     </script>
+    <!--Navbar Social Media Bold function-->
+    <!--<script>
+        function BOLDER(){
+            document.getElementById("navbarDropdownMenuLink").style.fontWeight = "Bold";
+        }
+        function NORMAL(){
+            document.getElementById("navbarDropdownMenuLink").style.fontWeight = "Normal";
+        }
+        function NORMAL_BOLDER(){
+            var droped = document.getElementById("navbarDropdownMenuLink");
+            if (droped.style.fontWeight == "Normal"){
+                BOLDER();
+            } else {
+                NORMAL();
+            }
+                
+
+
+        }
+    </script>-->
 </body>
 </html>
