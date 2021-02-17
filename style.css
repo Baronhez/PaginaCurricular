@@ -146,6 +146,7 @@ ul{
     background-color: #0b0d0c;
     width: 95%;
     margin: auto;
+    border-radius: 12px;
     
 }
 .light-mode-body {
@@ -651,21 +652,40 @@ hr{
     
 }
 
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p{
-    padding: .2em;
-    text-align: left;
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+padding: .2em;
+text-align: left;
     
 }
 
-    .contact-wrapper{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.contact-wrapper{
+display: grid;
+grid-template-columns: 2fr 1fr;
 }
+.smart-scroll{
+ 
+    
+    z-index: 1030;
+  }
+  .scrolled-down{
+     transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+     transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
 }
 @media (max-width: 700px){
-   
+    .smart-scroll{
+        z-index: 1030;
+      }
+      .scrolled-down{
+         transform:translateY(-100%); transition: all 0.3s ease-in-out;
+      }
+      .scrolled-up{
+         transform:translateY(0); transition: all 0.3s ease-in-out;
+      }
 
     .menu-btn{
         display: block;
@@ -728,6 +748,9 @@ hr{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+/*Navbar Scroll Down*/
+
 }
 @media (max-width: 1050px) {
 
