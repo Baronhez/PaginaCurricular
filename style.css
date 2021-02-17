@@ -1,3 +1,4 @@
+/*The beginning of my CSS file*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -82,22 +83,41 @@ Credits to Tashfeen for his creation*/
 
 
 
-/*My CSS*/
+/*My own CSS*/
+/*Makes movement around the webpage more smooth*/
 html {
   scroll-behavior: smooth;
 }
+
+/*The body of my webpage. By default it is in dark mode, which is the most confortable mode for me. You can switch between dark mode and light mode*/
 body{
     font-family: 'Oswald', sans-serif;
-    background: #000000;
     color: #ffffff;
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     font-size: 16px;
     
 }
+/*Light mode*/
 
+.light-mode-mailform {
+  background-color: #ffffff;
+  color: #ffffff;
+  
+}
 
+.light-mode-bodybackground{
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.41' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    font-size: 16px;
+}
 
+.light-mode-Contact-title{
+    color: #000000;
+    
+}
 
 
 /*Avatar*/
@@ -128,10 +148,12 @@ ul{
     margin: auto;
     
 }
-
+.light-mode-body {
+    background-color: #ffffff;
+    color: #000000;
+  }
 /*Navigation*/
 #nav1{
-    opacity: 0.9;
  
     background-color:#b70e21;
     
@@ -181,7 +203,7 @@ hr{
 
 .showcase{
     width: 100%;
-    height: 945px;
+    height: 960px;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Images/Puerta.png) no-repeat center center/cover;
     padding: 50px;
     margin-bottom: 20px;
@@ -197,6 +219,10 @@ hr{
   color: #fff;
 }
 /*Life cards*/
+.light-mode-Life{
+    color: #00acee;
+    background: #ffffff;
+}
 .life-cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -224,6 +250,7 @@ hr{
 .life-cards a:hover{
     text-decoration: underline;
 }
+
 /*Botones*/
 .btn{
     cursor: pointer;
@@ -309,7 +336,7 @@ hr{
 .cards-banner-two .content{
     width: 50%;
     padding: 750px 10px 0 69px;
-    color: #0b0d0c;
+    color: #ffffff;
     font-weight: bolder;
 }
 /*Social Networks*/
@@ -326,6 +353,8 @@ hr{
     margin-bottom: 20px;
 
 }
+
+
 .links{
     display: flex;
     align-items: center;
@@ -335,6 +364,7 @@ hr{
     
     margin:10 50px;
 }
+
 #linkedin:hover{
     color: #0e76a8;
 }
@@ -344,9 +374,17 @@ hr{
     color: #f2f2f2;
 }
 
+
+#twit2{ 
+    color: #000000;
+}
+#twit2:hover{
+    color: #00acee;
+}
 #twitter:hover{
     color: #00acee;
 }
+
 #reddit:hover{
     color:#FF5700;
 }
@@ -355,24 +393,9 @@ hr{
     font-size: 5rem;
 }
 
-/*Up Button*/
 
-/*
-.elementToFadeInAndOut {
-    width:200px;
-    height: 200px;
-   
-    
-    opacity: 1;
-}
 
-@-webkit-keyframes fadeinout {
-  50% { opacity: 0; }
-}
 
-@keyframes fadeinout {
-  50% { opacity: 0; }
-}*/
 
 #myBtn {
   display: none;
@@ -504,11 +527,14 @@ hr{
     text-align: center;
     font-size: 3em;
 }
-.contact span{
-    color:#b6b6b6;
+#me{
+    color:#b70e21;
 }
 .contact-wrapper{
     box-shadow: 0 0 20px 0 rgb(255,255,255,.3);
+}
+.light-mode-contact-wrapper{
+    box-shadow: 0 0 20px 0 rgb(0,0,0,.7);
 }
 .contact-wrapper > * {
     padding: 1em;
@@ -516,6 +542,7 @@ hr{
 .contact-form{
     background: #222222;
 }
+
 
 .contact-form form{
     display: grid;
@@ -604,7 +631,9 @@ hr{
 .scrolltoTop:hover {
   background-color: #d63031; /* Add a dark-grey background on hover */
 }
-
+.light-mode-soci{
+    color: #000;
+}
 @media (min-width: 700px){
 .form{
     padding: 3rem 3rem;
@@ -681,6 +710,7 @@ hr{
         grid-template-columns: repeat(2,1fr);
         height: 80%;
     }
+
     
   
     .cards-banner-two .content{

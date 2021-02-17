@@ -36,6 +36,10 @@
     
 </head>
 <body>
+
+            
+
+
     <!--LOADER-->
     <!--Credits to Tashfeen for his creation-->
     <div class="loader-wrapper">
@@ -52,7 +56,7 @@
     
     
 <!--Main container I did all the webpage inside a container because I wanted a cool pattern to be my webpage background-->
-    <div class="ccontainer">
+    <div class="ccontainer" id="ccont">
         <!--Provisional navbar Bar button-->
         
         <div class="menu-btn">
@@ -60,35 +64,6 @@
         </div>
         
         
-    <!--Provisional navbar-->
-    <!--
-        <nav class="nav-main">
-            <img src="./Images/Jonathan.jpg" alt="Foto personal" class="nav-brand">
-            <ul class="nav-menu show">
-                <li>
-                    <a href="#">Datos personales</a>
-                </li>
-                <li>
-                    <a href="#">Estudios</a>
-                </li>
-                <li>
-                    <a href="#">Titulación</a>
-                </li>
-                <li>
-                    <a href="#">Competencias</a>
-                </li>
-                
-
-            </ul>
-            <ul class="nav-menu-right">
-                <li>
-                    <a href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        -->
         <hr>
         <!--Avatar-->
          
@@ -103,6 +78,7 @@
         
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark" id="nav1">
             <div class="container-fluid">
+                
               <a class="navbar-brand" href="#">Navbar Provisional Until Designed content</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -116,10 +92,10 @@
                     <span><a class="nav-link " href="#Life">Studies and degrees</a></span>
                   </li>
                   <li class="nav-item">
-                    <span><a class="nav-link" href="#Knowledge">Knowledge</a></span>
+                    <span><a class="nav-link" href="#Knowledge" data-toggle="collapse" data-target=".collapse navbar-collapse.show">Knowledge</a></span>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick='NORMAL_BOLDER'>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Social Media
                     </a>
                     <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
@@ -143,116 +119,122 @@
             </div>
           </nav>
         <!--Life sections-->
-        <div class="life-cards" id="Life">
-        <!--Personal data-->
-        <div>
-            <img src="./Images/Solving problems.png" alt="Personal data">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        <!--Education-->
-        <div>
-            <img src="./Images/Graduation 2020.png" alt="Education">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        <!--Certificates-->
-        <div>
-            <img src="./Images/Successful completion of project.png" alt="Certificates">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        <!--Work skills-->
-        <div>
-            <img src="./Images/Design collaboration.png" alt="Work skills">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
-        </div>
-    
-    
-        </div>
-     <!--Banner for presentation-->
-     <section class="cards-banner-one">
-        <div class="content">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos libero amet nulla non saepe sunt quos iusto fuga ea quo?</p>
-            <a href="#Knowledge" class="btn">What can I do for your company? <i class="fas fa-angle-double-right"></i></a>
-        </div>
+        <section id="LifeId">
+            <div class="life-cards" id="Life">
+                <!--Personal data-->
+                <div>
+                    <img src="./Images/Solving problems.png" alt="Personal data">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
+                    <a href="#" class="life-cardsa">Ampliar <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <!--Education-->
+                <div>
+                    <img src="./Images/Graduation 2020.png" alt="Education">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
+                    <a href="#" class="life-cardsa">Ampliar <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <!--Certificates-->
+                <div>
+                    <img src="./Images/Successful completion of project.png" alt="Certificates">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
+                    <a href="#" class="life-cardsa">Ampliar <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <!--Work skills-->
+                <div>
+                    <img src="./Images/Design collaboration.png" alt="Work skills">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
+                    <a href="#" class="life-cardsa">Ampliar <i class="fas fa-angle-double-right"></i></a>
+                </div>
+            
+            
+                </div>
+             <!--Banner for presentation-->
+             <section class="cards-banner-one">
+                <div class="content">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos libero amet nulla non saepe sunt quos iusto fuga ea quo?</p>
+                    <a href="#Knowledge" class="btn">What can I do for your company? <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                
+             </section>
+             <section id="Knowledge"></section>
+             <div class="life-cards" >
+                <!--What can I do for the company-->
+                <!--Photoshop-->
+                <div>
+                    <img src="./Images/In-House Finance Professional.png" alt="Photoshop">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
+                    <a href="#" class="life-cardsa">Ampliar <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <!--Certificates-->
+                <div>
+                    <img src="./Images/Document Collaboration.png" alt="Vida Personal">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
+                    <a href="#" class="life-cardsa">Ampliar <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <!--Work skills-->
+                <div>
+                    <img src="./Images/Writing a Blog.png" alt="Vida Personal">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
+                    <a href="#" class="life-cardsa">Ampliar <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <!--Contact data-->
+                <div>
+                    <img src="./Images/Code Version Control.png" alt="Vida Personal">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
+                    <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
+                </div>
+             </div>
+             <section class="cards-banner-two">
+                <div class="content">
+                    <h2>How am I?</h2>
+                    <p>This is what I do in my free time.</p>
+                    <a href="#SocialMedia" class="btn">Take a look <i class="fas fa-angle-double-right"></i></a>
+                </div>
+             </section>
+             <div id="soci">
+                <section id="SocialMedia" class="social">
+                    <p>Follow me on my social media</p>
+                    <div class="columns-links">
         
-     </section>
-     <section id="Knowledge"></section>
-     <div class="life-cards" >
-        <!--What can I do for the company-->
-        <!--Photoshop-->
-        <div>
-            <img src="./Images/In-House Finance Professional.png" alt="Photoshop">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        <!--Certificates-->
-        <div>
-            <img src="./Images/Document Collaboration.png" alt="Vida Personal">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        <!--Work skills-->
-        <div>
-            <img src="./Images/Writing a Blog.png" alt="Vida Personal">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        <!--Contact data-->
-        <div>
-            <img src="./Images/Code Version Control.png" alt="Vida Personal">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, omnis mollitia! Error, eveniet nemo. Natus repellat debitis, voluptatem maiores nam amet architecto quae molestiae excepturi molestias animi. Eaque, eos velit.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore quaerat quas tempora nihil assumenda? Ipsum consectetur blanditiis numquam, maiores ab error earum, dolorum, laudantium suscipit quam delectus deserunt in?</p>
-            <a href="#">Ampliar <i class="fas fa-angle-double-right"></i></a>
-        </div>
-     </div>
-     <section class="cards-banner-two">
-        <div class="content">
-            <h2>How am I?</h2>
-            <p>This is what I do in my free time.</p>
-            <a href="#SocialMedia" class="btn">Take a look <i class="fas fa-angle-double-right"></i></a>
-        </div>
-     </section>
-     <div class="animate__animated animate__shakeYe animate__repeat-2">
-        <section id="SocialMedia" class="social">
-            <p>Follow me on my social media</p>
-            <div class="columns-links">
-
-                <div class="links">
-                    <a id="linkedin" href="https://www.linkedin.com/in/jonathan-r%C3%B3denas-l%C3%B3pez-45400115a/">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-                <div  class="links">
-                    <a id="github" href="https://github.com/Baronhez">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <div class="links">
-                    <a id="twitter" href="https://twitter.com/Baronhez1">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
-                <div class="links">
-                    <a id="reddit" href="https://www.reddit.com/user/Baronhez">
-                        <i class="fab fa-reddit"></i>
-                    </a>
-                </div>
+                        <div class="links">
+                            <a id="linkedin" href="https://www.linkedin.com/in/jonathan-r%C3%B3denas-l%C3%B3pez-45400115a/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div  class="links">
+                            <a id="github" href="https://github.com/Baronhez">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="links">
+                            <span >
+                                <a id="twitter" href="https://twitter.com/Baronhez1" class="twit">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </span>
+                            
+                        </div>
+                        <div class="links">
+                            <a id="reddit" href="https://www.reddit.com/user/Baronhez">
+                                <i class="fab fa-reddit"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p>Check my Art!</p>
+                </section>
+            
             </div>
-            <p>Check my Art!</p>
         </section>
-    
-    </div>
+        
 
     <!-- SLIDER -->
     <div id="slide-wrap">
@@ -301,10 +283,10 @@
                     <a href="#">Investigation bachelor, final project</a>
                 </li>
                 <li>
-                    <a href="#">Blockchain</a>
+                    <a href="#">Certificates</a>
                 </li>
                 <li>
-                    <a href="#">Blockchain</a>
+                    <a href="#">Microtales I wrote</a>
                 </li>
                 
             </ul>
@@ -320,9 +302,9 @@
 
     <!--Contact form-->
     <div class="form" id="mailform">
-        <h1 class="contact">Contact <span>Me</span></h1>
-        <div class="contact-wrapper">
-            <div class="contact-form">
+        <h1 class="contact" id="Contact-title">Contact <span id="me">Me</span></h1>
+        <div class="contact-wrapper" id="contactw">
+            <div class="contact-form" id="contactf">
                 <h3>Fill this form to contact me:</h3>
                 <form action="">
                     <p>
@@ -370,7 +352,7 @@
             </div>
         </div>
     </div>
-
+    <button onclick="myFunction()">Toggle dark mode</button>
 
     <!--Copyright footer-->
     <footer class="footer">
@@ -404,31 +386,114 @@
     <div class="elementToFadeInAndOut">
         <button onclick="topFunction()" id="myBtn" title="Go to top"><span>Up!</span></button> 
     </div>
+    
+    
     <!--Loader script-->
     <script>
         $(window).on("load",function(){
             $(".loader-wrapper").fadeOut("slow");
         })
     </script>
-    <!--Navbar Social Media Bold function-->
-    <!--<script>
-        function BOLDER(){
-            document.getElementById("navbarDropdownMenuLink").style.fontWeight = "Bold";
+   
+    <!--Hide navbar when Scroll down and when the user scrolls down 1000px from the top of the document, show the button-->
+    <script>
+        $(document).ready(function(){
+ 
+            $(document).scroll(function() {
+              var y = $(this).scrollTop();
+              var go_up = document.getElementById("myBtn");
+              if (y > 1000) {
+                $('.elementToFadeInAndOut').fadeIn();
+              } else {
+                $('.elementToFadeInAndOut').fadeOut(100);
+              }
+            }); 
+            });    
+       /* var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("nav1").style.top = "0";
+          } else {
+            document.getElementById("nav1").style.top = "-340px";
+          }
+          prevScrollpos = currentScrollPos;
         }
-        function NORMAL(){
-            document.getElementById("navbarDropdownMenuLink").style.fontWeight = "Normal";
+        var go_up = document.getElementById("myBtn");
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+          go_up.style.display = "block";
+        } else {
+          go_up.style.display = "none";
         }
-        function NORMAL_BOLDER(){
-            var droped = document.getElementById("navbarDropdownMenuLink");
-            if (droped.style.fontWeight == "Normal"){
-                BOLDER();
-            } else {
-                NORMAL();
-            }
-                
+    */
+    
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        scrollFunction();
+       
+    };
 
-
+    function scrollFunction() {
+        var go_up = document.getElementById("myBtn");
+      if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+        go_up.style.display = "block";
+      } else {
+        go_up.style.display = "none";
+      }
+    }  
+    
+    </script>
+    <!--Navbar toggle on click-->
+    <script>
+        $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+    </script>
+    <!--Activate or disable light mode-->
+    <script>
+        function myFunction() {
+            //Container Light Mode
+           var element0 = document.getElementById("ccont");
+           element0.classList.toggle("light-mode-body");
+           //Background Pattern Light Mode
+           var element1 = document.body
+           element1.classList.toggle("light-mode-bodybackground");
+           //Form Light Mode
+           var element2 = document.getElementById("mailform");
+           element2.classList.toggle("light-mode-mailform");
+           //Shadow of form Light Mode
+           var element3 = document.getElementById("contactw");
+           element3.classList.toggle("light-mode-contact-wrapper");
+           //Title of Form Light Mode
+           var element4 = document.getElementById("Contact-title");
+           element4.classList.toggle("light-mode-Contact-title");
+           //Inner elements of form Light Mode
+           var element5 = document.getElementById("contactf");
+           element5.classList.toggle("light-mode-contactf");
+           //External elements of form Light Mode
+           var element6 = document.getElementById("contactinfo");
+           element6.classList.toggle("light-mode-contactinfo");
+           //Life cards Light Mode
+           var element7 = document.getElementById("LifeId");
+           element7.classList.toggle("light-mode-Life");
+           //Twitter Logo Light Mode
+           var element8 = document.getElementById("twitter");
+           element8.setAttribute("id", "twitter", "twit2")
+           //Linkedin Logo Light Mode
+           var element9 = document.getElementById("linkedin");
+           element9.classList.toggle("linkedin");
+           //Reddit Logo Light Mode
+           var element10 = document.getElementsByClassName("life-cardsa");
+           element10.classList.toggle("light-mode-cards-a");
+           //Github Logo Light Mode
+           var element11 = document.getElementById("SocialMedia");
+           element11.classList.toggle("light-mode-social");
+           //Twitter Logo Light Mode
+           var element12 = document.getElementById("soci");
+           element12.classList.toggle("light-mode-soci");
+           
         }
-    </script>-->
+        </script>
+    
 </body>
 </html>
