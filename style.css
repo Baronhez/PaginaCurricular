@@ -121,6 +121,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
+
+
 /*Avatar*/
 .avatar {
   
@@ -138,6 +140,11 @@ a{
     color: #ffffff;
     text-decoration: none;
 }
+.linkslight{
+    color: #000;
+    text-decoration: none;
+}
+
 
 ul{
     list-style: none;
@@ -224,18 +231,30 @@ hr{
   color: #fff;
 }
 /*Life cards*/
-.light-mode-Life{
-    color: #00acee;
-    background: #ffffff;
-}
+
 .life-cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 90px 10px;
     gap: 25px;
     height: 1100px;
-   
 }
+.individual-card{
+    background-color: #0b0d0c;
+    transition: transform .2s;
+    box-shadow: 0 0 20px 0 rgb(255,255,255,.1);
+    
+}
+.individual-card:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.lifecardcontent{
+    padding: 10px;
+}
+
 .life-cards img{
     width: 100%;
     height: 210px;
@@ -246,8 +265,7 @@ hr{
     margin: 10px 0;
 }
 .life-cards a{
-    padding: 10px 0;
-    color: #f2f2f2;
+    padding: 10px 0;    
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
@@ -303,14 +321,7 @@ hr{
     z-index: 2;
     display: none; 
 }
-/*
-.nav-main ul li a{
-    padding: 6px;
-}
-.nav-main ul li a:hover{
-    border-bottom: 2px solid #ffffff;
-}
-*/
+
 /*Cards banner one*/
 .cards-banner-one{
     width: 100%;
@@ -361,12 +372,23 @@ hr{
 
 
 .links{
+    
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .links a{
+    color: #ffffff;
+    margin:10 50px;
+}
+.linkslight{
     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkslight a{
+    color: #000;
     margin:10 50px;
 }
 
@@ -376,19 +398,16 @@ hr{
 
 
 #github:hover{
-    color: #f2f2f2;
+    color: #b70e21;
 }
 
 
-#twit2{ 
-    color: #000000;
-}
-#twit2:hover{
-    color: #00acee;
-}
+
 #twitter:hover{
     color: #00acee;
 }
+
+
 
 #reddit:hover{
     color:#FF5700;
@@ -803,8 +822,23 @@ hr{
     align-items: center;
     opacity: 0;
 }
-
-
+.individualcardlight{
+    background-color: #ffffff;
+    transition: transform .2s;
+    box-shadow: 0 0 20px 0 rgba(128, 79, 79, 0.1);
+    color: black;
+}
+.individualcardlight:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.life-cardsa{
+    color: #ffffff;    
+}
+.life-cardsa-light{
+    color: #000000;    
+}
 
 @media (min-width: 700px){
 .form{
@@ -870,7 +904,9 @@ grid-template-columns: 2fr 1fr;
     .life-cards{
         grid-template-columns: repeat(2,1fr);
         height: 80%;
+        
     }
+    
 
     
   
