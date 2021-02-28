@@ -15,16 +15,17 @@ Credits to Tashfeen for his creation*/
     position: absolute;
     text-align: center;
     background-color: #242f3f;
+    z-index: 1;
 }
 
 .loader {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 75px;
+  height: 75px;
   position: relative;
   border: 4px solid #Fff;
   
-  top: 50%;
+  top: 60%;
   animation: loader 2s infinite ease;
 }
 
@@ -126,7 +127,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   display: flex;
   justify-content: center;
   vertical-align: middle;
-  width: 150px;
+  width: 250px;
   height: auto;
   border-radius: 60%;
   margin-bottom: auto;
@@ -202,7 +203,7 @@ hr{
 
 
 
-.showcase{
+.showcase div{
     width: 100%;
     height: 960px;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Images/Puerta.png) no-repeat center center/cover;
@@ -214,8 +215,11 @@ hr{
     align-items: center;
     justify-content: flex-end;
     color: #fff;
+    perspective: 1000px;
+    z-index: 2;
+    
 }
-.showcase h2{
+.showcase div h2{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #fff;
 }
@@ -635,6 +639,173 @@ hr{
 .light-mode-soci{
     color: #000;
 }
+
+/*Logo Loader position*/
+#logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: fill 0.5s ease forwards 3.5s;
+}
+/*Letters of loader Logo*/
+#LetterJ{
+    stroke-dasharray: 332.84930419921875px;
+    stroke-dashoffset: 332.84930419921875px;
+    animation: line-anim 2s ease forwards;
+}
+#LetterO{
+    stroke-dasharray: 565.9496459960938px;
+    stroke-dashoffset: 565.9496459960938px;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#LetterN1{
+    stroke-dasharray: 606.5611572265625px;
+    stroke-dashoffset: 606.5611572265625px;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+#LetterA1{
+    stroke-dasharray:  483.3992004394531px;
+    stroke-dashoffset:  483.3992004394531px;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+#LetterT{
+    stroke-dasharray: 356.6719970703125px;
+    stroke-dashoffset: 356.6719970703125px;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+#LetterH{
+    stroke-dasharray: 554.528076171875px;
+    stroke-dashoffset: 554.528076171875px;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+#LetterA2{
+    stroke-dasharray: 483.3992004394531px;
+    stroke-dashoffset: 483.3992004394531px;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+#LetterN2{
+    stroke-dasharray: 606.5611572265625px;
+    stroke-dashoffset: 606.5611572265625px;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+/*The animation itself*/
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+    }
+}
+
+.sectioncard{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.cardcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    perspective: 1500px;
+    
+  
+}
+.card{
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    background: white;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+}
+
+.twitterbird {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.twitterbird img{
+    width: 20rem;
+    z-index: 2;
+    transition:all 0.75s ease-out;
+}
+
+.circle{
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right,
+        rgba(245,70,60,0.75),
+        rgba(8,83,156,0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info h1{
+    font-size:3rem;
+    transition:all 0.75s ease-out;
+    color: #0b0d0c;
+    text-align: center;
+}
+
+.info h3{
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition:all 0.75s ease-out;
+    text-align: center;
+}
+
+.follow{
+    margin-top: 5rem;
+    transition:all 0.75s ease-out;
+}
+.follow button{
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #f54642;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    font-weight: bolder;
+    
+}
+
+#epilepticworm{
+    display: none;
+    border: none;
+    width: 100%;
+    height: 800px;
+}
+
+#wormButton{
+    align-items: center;
+    opacity: 0;
+}
+
+
+
 @media (min-width: 700px){
 .form{
     padding: 3rem 3rem;
@@ -664,6 +835,8 @@ text-align: left;
 display: grid;
 grid-template-columns: 2fr 1fr;
 }
+
+/*Navbar hide*/
 .smart-scroll{
  
     
@@ -688,44 +861,12 @@ grid-template-columns: 2fr 1fr;
       }
 
     .menu-btn{
-        display: block;
+        display: none;
     }
     .menu-btn:hover{
         opacity: .5;
     } 
-    /*  
-    .nav-main ul.nav-menu{
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #2f3640;
-        height: 100%;
-        border-bottom: #ccc solid 1px;
-        padding: 30px;
-        opacity: .9;
-        transform: translateX(-400px);
-        transition: transform 0.5s ease-in-out;
-    }
-
-    .nav-main ul.nav-menu.show {
-        transform: translateX(-20px);
-    }
-
-    .nav-main ul.nav-menu li{
-        padding: 20px;
-        border-bottom: #ccc solid 1px;
-        font-size: 14px;
-    }
-    .nav-main ul.nav-menu li:last-child {
-        border-bottom: 0;
-      }
-
-
-    .nav-main ul.nav-menu-right{
-        margin-right: 50px;
-    }
-    */
+    
     .life-cards{
         grid-template-columns: repeat(2,1fr);
         height: 80%;
