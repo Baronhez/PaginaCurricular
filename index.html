@@ -147,6 +147,8 @@
                 <img src="/Images/Jonathan.jpg" alt="Avatar" class="avatar"> 
             <h2>Jonathan Ródenas López</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit asperiores tenetur soluta natus modi accusamus delectus amet deleniti atque provident ab minima adipisci iusto, nisi sint quia, vitae voluptatum! Aliquam.</p>
+            <img src = "Images/dark.png" onclick="Light(this)" id="imgClickAndChange" alt="toggle">
+            <!--<button onclick="Light()">Toggle dark mode</button>-->
             <a href="#Life" class="btn">Read more about me <i class="fas fa-angle-double-right"></i></a>
             </div>
             
@@ -424,7 +426,7 @@
                 </div>
             </div>
         </div>
-        <button onclick="Light()">Toggle dark mode</button>
+        
 
         <!--Copyright footer-->
         <footer class="footer">
@@ -500,7 +502,16 @@
         </script>
         <!--Activate or disable light mode-->
         <script>
-            function Light() {
+            function changeButton(){
+                
+            }
+        </script>
+        <script>
+            function Light(element) {
+                //Change button
+                element.src = element.bln ? "Images/dark.png" : "Images/light.png";
+                element.bln = !element.bln;  /* assigns opposite boolean value always */
+                
                 //Life cards light mode
                 if ( document.getElementById("card1").classList.contains('individual-card') ) {
                     document.getElementById("card1").classList.toggle('individualcardlight');
