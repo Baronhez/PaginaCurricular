@@ -14,8 +14,8 @@ Credits to Tashfeen for his creation*/
     height: 100%;
     position: absolute;
     text-align: center;
-    background-color: #242f3f;
-    z-index: 1;
+    background-color: #0b0d0c;
+    z-index: 50000;
 }
 
 .loader {
@@ -24,9 +24,9 @@ Credits to Tashfeen for his creation*/
   height: 75px;
   position: relative;
   border: 4px solid #Fff;
-  
-  top: 60%;
+  top: 80%;
   animation: loader 2s infinite ease;
+  z-index: 50000;
 }
 
 .loader-inner {
@@ -35,11 +35,13 @@ Credits to Tashfeen for his creation*/
   width: 100%;
   background-color: #fff;
   animation: loader-inner 0.9s infinite ease-in;
+  z-index: 50000;
 }
 
 @keyframes loader {
   0% {
     transform: rotate(0deg);
+    z-index: 50000;
   }
   
   25% {
@@ -81,6 +83,81 @@ Credits to Tashfeen for his creation*/
   }
 }
 
+/*Logo Loader position*/
+#logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: fill 0.5s ease forwards 3.5s;
+    z-index: 50000;
+}
+/*Letters of loader Logo*/
+#LetterJ{
+    stroke-dasharray: 332.84930419921875px;
+    stroke-dashoffset: 332.84930419921875px;
+    animation: line-anim 1s ease forwards;
+    z-index: 50000;
+}
+#LetterO{
+    stroke-dasharray: 565.9496459960938px;
+    stroke-dashoffset: 565.9496459960938px;
+    animation: line-anim 1s ease forwards 0.2s;
+    z-index: 50000;
+}
+#LetterN1{
+    stroke-dasharray: 606.5611572265625px;
+    stroke-dashoffset: 606.5611572265625px;
+    animation: line-anim 1s ease forwards 0.3s;
+    z-index: 50000;
+}
+#LetterA1{
+    stroke-dasharray:  483.3992004394531px;
+    stroke-dashoffset:  483.3992004394531px;
+    animation: line-anim 1s ease forwards 0.6s;
+    z-index: 50000;
+}
+#LetterT{
+    stroke-dasharray: 356.6719970703125px;
+    stroke-dashoffset: 356.6719970703125px;
+    animation: line-anim 1s ease forwards 0.9s;
+    z-index: 50000;
+}
+#LetterH{
+    stroke-dasharray: 554.528076171875px;
+    stroke-dashoffset: 554.528076171875px;
+    animation: line-anim 1s ease forwards 1.2s;
+    z-index: 50000;
+}
+#LetterA2{
+    stroke-dasharray: 483.3992004394531px;
+    stroke-dashoffset: 483.3992004394531px;
+    animation: line-anim 1s ease forwards 1.5s;
+    z-index: 50000;
+}
+#LetterN2{
+    stroke-dasharray: 606.5611572265625px;
+    stroke-dashoffset: 606.5611572265625px;
+    animation: line-anim 1s ease forwards 1.8s;
+    z-index: 50000;
+}
+/*The animation itself*/
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+        z-index: 50000;
+    }
+}
+@keyframes fill{
+    from{
+        fill: transparent;
+        z-index: 50000;
+    }
+    to{
+        fill: white;
+    }
+}
+
 
 
 
@@ -97,6 +174,7 @@ body{
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     font-size: 16px;
+    
     
 }
 /*Light mode*/
@@ -121,7 +199,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 /*Button which activates Light Mode*/
 #imgClickAndChange{
-    height: 50px;
+    height: 100px;
 }
 
 
@@ -190,21 +268,7 @@ ul{
 .dropdown-item{
     color: #ffffff;
 }
-/*Provisional Navigation*/
-/*
-.nav-main{
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 20px 0;
-}
 
-.nav-brand{
-    width: 50px;
-}
-*/
 /*Main header*/
 hr{
     margin: 10px 0;
@@ -226,7 +290,7 @@ hr{
     align-items: center;
     justify-content: flex-end;
     color: #fff;
-    perspective: 1000px;
+    
     z-index: 2;
     
 }
@@ -269,13 +333,19 @@ hr{
     margin: 10px 0;
 }
 .life-cards a{
-    padding: 10px 0;    
+    padding: 10px;    
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
 }
 .life-cards a:hover{
+
     text-decoration: underline;
+}
+/*Headers for my life cards*/
+#PersonalData{
+    text-align: center;
+    font-weight: bold;
 }
 
 /*Botones*/
@@ -303,19 +373,7 @@ hr{
 .showcase .btn {
     margin-top: 20px;
   }
-/*Nav Left*/
-/*
-.nav-main ul{
-    display: flex;
-}
-.nav-main ul li{
-    padding: 10px;
-}
-.nav-main ul.nav-menu{
-    flex: 1;
-    margin-left: 20px;
-}
-*/
+
 .menu-btn{
     
     cursor: pointer;
@@ -663,70 +721,6 @@ hr{
     color: #000;
 }
 
-/*Logo Loader position*/
-#logo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    animation: fill 0.5s ease forwards 3.5s;
-}
-/*Letters of loader Logo*/
-#LetterJ{
-    stroke-dasharray: 332.84930419921875px;
-    stroke-dashoffset: 332.84930419921875px;
-    animation: line-anim 2s ease forwards;
-}
-#LetterO{
-    stroke-dasharray: 565.9496459960938px;
-    stroke-dashoffset: 565.9496459960938px;
-    animation: line-anim 2s ease forwards 0.3s;
-}
-#LetterN1{
-    stroke-dasharray: 606.5611572265625px;
-    stroke-dashoffset: 606.5611572265625px;
-    animation: line-anim 2s ease forwards 0.6s;
-}
-#LetterA1{
-    stroke-dasharray:  483.3992004394531px;
-    stroke-dashoffset:  483.3992004394531px;
-    animation: line-anim 2s ease forwards 0.9s;
-}
-#LetterT{
-    stroke-dasharray: 356.6719970703125px;
-    stroke-dashoffset: 356.6719970703125px;
-    animation: line-anim 2s ease forwards 1.2s;
-}
-#LetterH{
-    stroke-dasharray: 554.528076171875px;
-    stroke-dashoffset: 554.528076171875px;
-    animation: line-anim 2s ease forwards 1.5s;
-}
-#LetterA2{
-    stroke-dasharray: 483.3992004394531px;
-    stroke-dashoffset: 483.3992004394531px;
-    animation: line-anim 2s ease forwards 1.8s;
-}
-#LetterN2{
-    stroke-dasharray: 606.5611572265625px;
-    stroke-dashoffset: 606.5611572265625px;
-    animation: line-anim 2s ease forwards 2.1s;
-}
-/*The animation itself*/
-@keyframes line-anim{
-    to{
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes fill{
-    from{
-        fill: transparent;
-    }
-    to{
-        fill: white;
-    }
-}
-
 .sectioncard{
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -876,8 +870,6 @@ grid-template-columns: 2fr 1fr;
 
 /*Navbar hide*/
 .smart-scroll{
- 
-    
     z-index: 1030;
   }
   .scrolled-down{
@@ -889,6 +881,11 @@ grid-template-columns: 2fr 1fr;
 }
 @media (max-width: 700px){
     .smart-scroll{
+        position: fixed;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
         z-index: 1030;
       }
       .scrolled-down{
@@ -910,10 +907,6 @@ grid-template-columns: 2fr 1fr;
         height: 80%;
         
     }
-    
-
-    
-  
     .cards-banner-two .content{
         width: 80%;
     }
@@ -947,11 +940,40 @@ grid-template-columns: 2fr 1fr;
         color: #ffffff;
         font-weight: bold;
       }
-    
+      .smart-scroll{
+        position: fixed;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+      }
+      .scrolled-down{
+         transform:translateY(-100%); transition: all 0.3s ease-in-out;
+      }
+      .scrolled-up{
+         transform:translateY(0); transition: all 0.3s ease-in-out;
+      }
+
    
     
 }
 @media (max-width: 500px) {
+    .smart-scroll{
+        position: fixed;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+      }
+      .scrolled-down{
+         transform:translateY(-100%); transition: all 0.3s ease-in-out;
+      }
+      .scrolled-up{
+         transform:translateY(0); transition: all 0.3s ease-in-out;
+      }
+
     .life-cards {
       grid-template-columns: 1fr;
       height: 0%;

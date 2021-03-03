@@ -17,12 +17,13 @@ ScrollReveal().reveal('.footer', { delay: 250 });
 
 
 // detect scroll top or down for the navbar
+
 if ($('.smart-scroll').length > 0) { // check if element exists
     var last_scroll_top = 0;
     $(window).on('scroll', function() {
         scroll_top = $(this).scrollTop();
         if(scroll_top < last_scroll_top) {
-            $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+            $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up'); 
         }
         else {
             $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
@@ -43,13 +44,14 @@ function topFunction() {
 const card = document.querySelector('.card');
 
 //const cardcontainer = document.querySelector(".cardcontainer");
-const cardcontainer = document.querySelector(".cardcontainer");
+const cardcontainer = document.querySelector(".showcase");
 
 //Items moving around with card
 const title = document.querySelector('.title');
-const twitterbird = document.querySelector('.twitterbird img');
+const twitterbird = document.querySelector('.avatar');
 const follow = document.querySelector('.follow');
-const description = document.querySelector('.info h3');
+const description = document.querySelector('.gono');
+const read = document.querySelector('.btn');
 
 //Moving Animation Event
 cardcontainer.addEventListener("mousemove", (e) => {
@@ -64,8 +66,9 @@ cardcontainer.addEventListener('mouseenter', e => {
     //Popout
     title.style.transform = "translateZ(150px)";
     description.style.transform = "translateZ(125px)";   
-    twitterbird.style.transform = "translateZ(200px) rotateZ(-25deg)";
+    twitterbird.style.transform = "translateZ(200px) ";
     follow.style.transform = "translateZ(75px)";
+    read.style.transform = "translateZ(60px)";
 });
 
 //Reset Animation Out
@@ -78,6 +81,7 @@ cardcontainer.addEventListener("mouseleave", (e) => {
     twitterbird.style.transform = "translateZ(0px) rotateZ(0deg)";
     description.style.transform = "translateZ(0px)";
     follow.style.transform = "translateZ(0px)";
+    read.style.transform = "translateZ(0px)";
 
  });
 
