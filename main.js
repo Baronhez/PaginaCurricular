@@ -39,8 +39,9 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-//Movement Animation to happen in social media cards
+if ($(this).width() > 480) {
+  // Call 3D animation when it is not under 480 px (Responsive design)
+  //Movement Animation to happen in social media cards
 const card = document.querySelector('.card');
 
 //const cardcontainer = document.querySelector(".cardcontainer");
@@ -84,8 +85,10 @@ cardcontainer.addEventListener("mouseleave", (e) => {
     read.style.transform = "translateZ(0px)";
 
  });
+}
+
  
-//Video on scroll (It is not a good idea, to much efford for the processor)
+//Video on scroll (It is not a good idea, too much efford for the processor)
 /*
 const intro = document.querySelector(".intro");
 const video = intro.querySelector("video");
