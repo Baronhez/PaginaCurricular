@@ -174,6 +174,11 @@ body{
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;  
     
     
 }
@@ -273,11 +278,6 @@ ul{
 hr{
     margin: 10px 0;
 }
-
-
-
-
-
 .showcase div{
     width: 100%;
     height: 960px;
@@ -290,9 +290,7 @@ hr{
     align-items: center;
     justify-content: flex-end;
     color: #fff;
-    
-    z-index: 2;
-    
+    z-index: 2; 
 }
 .showcase div h2{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -339,7 +337,6 @@ hr{
     font-weight: bold;
 }
 .life-cards a:hover{
-
     text-decoration: underline;
 }
 /*Headers for my life cards*/
@@ -372,18 +369,7 @@ hr{
 
 .showcase .btn {
     margin-top: 20px;
-  }
-
-.menu-btn{
-    
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    z-index: 2;
-    display: none; 
 }
-
 /*Cards banner one*/
 .cards-banner-one{
     width: 100%;
@@ -831,9 +817,12 @@ hr{
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
 }
+
 .life-cardsa{
-    color: #ffffff;    
+    
+    color: #ffffff;      
 }
+
 .life-cardsa-light{
     color: #000000;    
 }
@@ -873,12 +862,33 @@ grid-template-columns: 2fr 1fr;
     z-index: 1030;
   }
   .scrolled-down{
-     transform:translateY(-100%); transition: all 0.3s ease-in-out;
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
   }
   .scrolled-up{
-     transform:translateY(0); transition: all 0.3s ease-in-out;
+    transform:translateY(0); transition: all 0.3s ease-in-out;
   }
 }
+/*Video on scroll (Not a good idea, too much efford for the processor)*/
+/*
+.intro {
+    height: 100vh;
+}
+  
+.intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+  
+.intro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+}
+*/
 @media (max-width: 700px){
     .smart-scroll{
         position: fixed;
@@ -966,42 +976,96 @@ grid-template-columns: 2fr 1fr;
         right: 0;
         left: 0;
         z-index: 1030;
-      }
-      .scrolled-down{
-         transform:translateY(-100%); transition: all 0.3s ease-in-out;
-      }
-      .scrolled-up{
-         transform:translateY(0); transition: all 0.3s ease-in-out;
-      }
+    }
+    .scrolled-down{
+        transform:translateY(-100%); transition: all 0.3s ease-in-out;
+    }
+    .scrolled-up{
+        transform:translateY(0); transition: all 0.3s ease-in-out;
+    }
 
-    .life-cards {
+      
+#myBtn {
+    display: none;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #b70e21; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+  
+#myBtn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  
+}
+  
+#myBtn span:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f102';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+  
+#myBtn:hover span {
+    padding-right: 25px;
+}
+  
+#myBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+  
+#myBtn:hover {
+    background-color:  #d63031; /* Add a dark-grey background on hover */
+    transition: background-color 0.5s ease-out;
+}
+
+.life-cards {
       grid-template-columns: 1fr;
       height: 0%;
-    }
-    .life-cards img{
+}
+.life-cards img{
         height: 270px;
-    }
-    .columns-links{
+}
+.columns-links{
+        
         display: grid;
+        
         grid-template-columns: 1fr 1fr;
-    }
-    .cards-banner-one .content{
+}
+.cards-banner-one .content{
         width: 100%;
         padding: 750px 20px 5px 10px;
         color: #ffffff;
-    }
-    .cards-banner-two .content {
+}
+.cards-banner-two .content {
       width: 100%;
       padding: 750px 20px;
       color: #ffffff;
       font-weight: bold;
-    }
-    .footer-links .footer-container {
+}
+.footer-links .footer-container {
       grid-template-columns: 1fr;
-    }
+}
   
-    .footer-links .footer-container ul {
+.footer-links .footer-container ul {
       text-align: center;
-    }
+}
     
 }

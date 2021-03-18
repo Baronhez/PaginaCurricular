@@ -48,9 +48,9 @@ const cardcontainer = document.querySelector(".showcase");
 
 //Items moving around with card
 const title = document.querySelector('.title');
-const twitterbird = document.querySelector('.avatar');
+const avatar = document.querySelector('.avatar');
 const follow = document.querySelector('.follow');
-const description = document.querySelector('.gono');
+const description = document.querySelector('.dono');
 const read = document.querySelector('.btn');
 
 //Moving Animation Event
@@ -66,7 +66,7 @@ cardcontainer.addEventListener('mouseenter', e => {
     //Popout
     title.style.transform = "translateZ(150px)";
     description.style.transform = "translateZ(125px)";   
-    twitterbird.style.transform = "translateZ(200px) ";
+    avatar.style.transform = "translateZ(200px) ";
     follow.style.transform = "translateZ(75px)";
     read.style.transform = "translateZ(60px)";
 });
@@ -78,11 +78,59 @@ cardcontainer.addEventListener("mouseleave", (e) => {
 
     //Popout
     title.style.transform = "translateZ(0px)";
-    twitterbird.style.transform = "translateZ(0px) rotateZ(0deg)";
+    avatar.style.transform = "translateZ(0px) rotateZ(0deg)";
     description.style.transform = "translateZ(0px)";
     follow.style.transform = "translateZ(0px)";
     read.style.transform = "translateZ(0px)";
 
  });
+ 
+//Video on scroll (It is not a good idea, to much efford for the processor)
+/*
+const intro = document.querySelector(".intro");
+const video = intro.querySelector("video");
+const text = intro.querySelector("h1");
+//END SECTION
+const section = document.querySelector(".tex");
+const end = section.querySelector("h1");
 
+//SCROLLMAGIC
+const controller = new ScrollMagic.Controller();
 
+//Scenes
+let scene = new ScrollMagic.Scene({
+  duration: 9000,
+  triggerElement: intro,
+  triggerHook: 0
+})
+  .addIndicators()
+  .setPin(intro)
+  .addTo(controller);
+
+//Text Animation
+const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
+
+let scene2 = new ScrollMagic.Scene({
+  duration: 3000,
+  triggerElement: intro,
+  triggerHook: 0
+})
+  .setTween(textAnim)
+  .addTo(controller);
+
+//Video Animation
+let accelamount = 0.1;
+let scrollpos = 0;
+let delay = 0;
+
+scene.on("update", e => {
+  scrollpos = e.scrollPos / 1000;
+});
+
+setInterval(() => {
+  delay += (scrollpos - delay) * accelamount;
+  
+
+  video.currentTime = delay;
+}, 33.3);
+*/
