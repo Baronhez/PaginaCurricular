@@ -965,8 +965,91 @@ grid-template-columns: 2fr 1fr;
       .scrolled-up{
          transform:translateY(0); transition: all 0.3s ease-in-out;
       }
-
-   
+/*Logo Loader position*/
+#logo{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: fill 0.5s ease forwards 3.5s;
+    z-index: 50000;
+}
+/*Letters of loader Logo*/
+#LetterJ{
+    stroke-dasharray: 332.84930419921875px;
+    stroke-dashoffset: 332.84930419921875px;
+    animation: line-anim 1s ease forwards;
+    z-index: 50000;
+}
+#LetterO{
+    stroke-dasharray: 565.9496459960938px;
+    stroke-dashoffset: 565.9496459960938px;
+    animation: line-anim 1s ease forwards 0.2s;
+    z-index: 50000;
+}
+#LetterN1{
+    stroke-dasharray: 606.5611572265625px;
+    stroke-dashoffset: 606.5611572265625px;
+    animation: line-anim 1s ease forwards 0.3s;
+    z-index: 50000;
+}
+#LetterA1{
+    stroke-dasharray:  483.3992004394531px;
+    stroke-dashoffset:  483.3992004394531px;
+    animation: line-anim 1s ease forwards 0.6s;
+    z-index: 50000;
+}
+#LetterT{
+    stroke-dasharray: 356.6719970703125px;
+    stroke-dashoffset: 356.6719970703125px;
+    animation: line-anim 1s ease forwards 0.9s;
+    z-index: 50000;
+}
+#LetterH{
+    stroke-dasharray: 554.528076171875px;
+    stroke-dashoffset: 554.528076171875px;
+    animation: line-anim 1s ease forwards 1.2s;
+    z-index: 50000;
+}
+#LetterA2{
+    stroke-dasharray: 483.3992004394531px;
+    stroke-dashoffset: 483.3992004394531px;
+    animation: line-anim 1s ease forwards 1.5s;
+    z-index: 50000;
+}
+#LetterN2{
+    stroke-dasharray: 606.5611572265625px;
+    stroke-dashoffset: 606.5611572265625px;
+    animation: line-anim 1s ease forwards 1.8s;
+    z-index: 50000;
+}
+/*The animation itself*/
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+        z-index: 50000;
+    }
+}
+@keyframes fill{
+    from{
+        fill: transparent;
+        z-index: 50000;
+    }
+    to{
+        fill: white;
+    }
+}
+.loader {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    border: 4px solid #Fff;
+    top: 50%;
+    animation: loader 2s infinite ease;
+    z-index: 50000;
+  }   
     
 }
 @media (max-width: 500px) {
