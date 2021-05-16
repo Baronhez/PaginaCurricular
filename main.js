@@ -10,9 +10,7 @@ ScrollReveal().reveal('.cards-banner-one', { delay: 250 });
 ScrollReveal().reveal('.cards-banner-two', { delay: 250 });
 ScrollReveal().reveal('.social', { delay: 250 });
 ScrollReveal().reveal('.slider', { delay: 250 });
-ScrollReveal().reveal('.footercontainer', { delay: 250 });
-ScrollReveal().reveal('.form', { delay: 250 });
-ScrollReveal().reveal('.footer', { delay: 250 });
+
 
 
 
