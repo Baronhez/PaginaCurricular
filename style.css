@@ -1049,7 +1049,12 @@ grid-template-columns: 2fr 1fr;
     top: 50%;
     animation: loader 2s infinite ease;
     z-index: 50000;
-  }   
+  } 
+  .columns-links{
+    display: grid;
+    position: relative;
+  
+}  
     
 }
 @media (max-width: 500px) {
@@ -1067,7 +1072,12 @@ grid-template-columns: 2fr 1fr;
     .scrolled-up{
         transform:translateY(0); transition: all 0.3s ease-in-out;
     }
-
+    .columns-links{
+        display: grid;
+        position: center;
+        
+        grid-template-columns: 1fr 1fr;
+    }
       
 #myBtn {
     display: none;
@@ -1293,10 +1303,10 @@ grid-template-columns: 2fr 1fr;
   }
     
 }
-@media (max-width: 360px) {
+@media (max-width: 400px) {
     .columns-links{
         display: grid;
-        position: relative;
+        position: center;
         left: -35px;
         grid-template-columns: 1fr 1fr;
     }
