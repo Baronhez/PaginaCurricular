@@ -890,6 +890,11 @@ grid-template-columns: 2fr 1fr;
     color: white;
 }
 */
+
+
+
+
+
 @media (max-width: 700px){
     .smart-scroll{
         position: fixed;
@@ -1310,5 +1315,19 @@ grid-template-columns: 2fr 1fr;
         left: -35px;
         grid-template-columns: 1fr 1fr;
     }
+}
+@media (max-width: 1400px){
+
+
+    #logo{
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        animation: fill 0.5s ease forwards 3.5s;
+        z-index: 50000;
+    }
+    
 }
 
