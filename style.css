@@ -170,6 +170,7 @@ html {
 
 /*The body of my webpage. By default it is in dark mode, which is the most confortable mode for me. You can switch between dark mode and light mode*/
 body{
+    position: relative;
     font-family: 'Oswald', sans-serif;
     color: #ffffff;
     background-color: #000000;
