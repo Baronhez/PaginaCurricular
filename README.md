@@ -6,7 +6,7 @@
 # Objetivos
 * Mostrar mis habilidades de programación.
 * Mostrar mis trabajos previos de diseño.
-* Mostrar mis habilidades como frontEnd developer.
+* Mostrar mis habilidades como FrontEnd developer.
   * Mediante demostración práctica en la propia página.
   * Mediante presentación de otros proyectos.
 ---------
@@ -18,8 +18,18 @@
 # #URL to the webpage
 <loremipsum> 
  -
-O este enlace si lo prefieres [Si Dios no existe, como explicas la lluvia](<loremipsum>)
+O este enlace si lo prefieres [https://jonthan.xyz/](<¿No es verdad, ángel de amor,
+
+que en esta apartada orilla
+
+más pura la luna brilla
+
+y se respira mejor?>)
 
 ## My webpage appareance
+
+![imagen](https://user-images.githubusercontent.com/57847247/133019347-2977d8d8-3c44-4098-8509-0d12e795446c.png)
+![imagen](https://user-images.githubusercontent.com/57847247/133019381-91fba774-6778-4b47-bb80-c182bdf4796f.png)
+![imagen](https://user-images.githubusercontent.com/57847247/133019469-6b89b18a-ba8e-416c-a732-453cd1e687ca.png)
 
 
