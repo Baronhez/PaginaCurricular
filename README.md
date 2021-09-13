@@ -29,7 +29,11 @@ y se respira mejor?>)
 ## My webpage appareance
 
 ![imagen](https://user-images.githubusercontent.com/57847247/133019347-2977d8d8-3c44-4098-8509-0d12e795446c.png)
+ 
+ 
 ![imagen](https://user-images.githubusercontent.com/57847247/133019381-91fba774-6778-4b47-bb80-c182bdf4796f.png)
+ 
+ 
 ![imagen](https://user-images.githubusercontent.com/57847247/133019469-6b89b18a-ba8e-416c-a732-453cd1e687ca.png)
 
 
