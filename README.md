@@ -18,13 +18,7 @@
 # #URL to the webpage
 <loremipsum> 
  -
-O este enlace si lo prefieres [https://jonthan.xyz/] (<¿No es verdad, ángel de amor,
-
-que en esta apartada orilla
-
-más pura la luna brilla
-
-y se respira mejor?>)
+O este enlace si lo prefieres https://jonthan.xyz/
 
 ## My webpage appareance
 
