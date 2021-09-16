@@ -12,10 +12,10 @@ Credits to Tashfeen for his creation*/
 .loader-wrapper{
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     text-align: center;
     background-color: #0b0d0c;
-    z-index: 50000;
+    z-index: 50001;
 }
 
 .loader {
@@ -26,7 +26,7 @@ Credits to Tashfeen for his creation*/
   border: 4px solid #Fff;
   top: 80%;
   animation: loader 2s infinite ease;
-  z-index: 50000;
+  z-index: 50001;
 }
 
 .loader-inner {
@@ -35,7 +35,7 @@ Credits to Tashfeen for his creation*/
   width: 100%;
   background-color: #fff;
   animation: loader-inner 0.9s infinite ease-in;
-  z-index: 50000;
+  z-index: 50001;
 }
 
 @keyframes loader {
@@ -86,7 +86,6 @@ Credits to Tashfeen for his creation*/
 /*Logo Loader position*/
 #logo{
     position: fixed;
-    
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -976,7 +975,7 @@ grid-template-columns: 2fr 1fr;
       }
 /*Logo Loader position*/
 #logo{
-    position: absolute;
+    position: fixed;
     display: none;
     top: 50%;
     left: 50%;
@@ -1053,7 +1052,7 @@ grid-template-columns: 2fr 1fr;
     display: inline-block;
     width: 75px;
     height: 75px;
-    position: relative;
+    position: fixed;
     border: 4px solid #Fff;
     top: 50%;
     animation: loader 2s infinite ease;
@@ -1172,7 +1171,7 @@ grid-template-columns: 2fr 1fr;
 }
 /*Logo Loader position*/
 #logo{
-    position: absolute;
+    position: fixed;
     display: none;
     top: 50%;
     left: 50%;
@@ -1324,7 +1323,7 @@ grid-template-columns: 2fr 1fr;
 
 
     #logo{
-        position: absolute;
+        position: fixed;
         display: none;
         top: 50%;
         left: 50%;
