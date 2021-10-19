@@ -16,6 +16,12 @@ Credits to Tashfeen for his creation*/
     text-align: center;
     background-color: #0b0d0c;
     z-index: 50001;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .loader {
