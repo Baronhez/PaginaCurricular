@@ -4,12 +4,7 @@ jQuery(document).ready(function(){
     jQuery(this).scrollTop(0);
     });
 
-ScrollReveal().reveal('.showcase');
-ScrollReveal().reveal('.life-cards', { delay: 250 });
-ScrollReveal().reveal('.cards-banner-one', { delay: 250 });
-ScrollReveal().reveal('.cards-banner-two', { delay: 250 });
-ScrollReveal().reveal('.social', { delay: 250 });
-ScrollReveal().reveal('.slider', { delay: 250 });
+
 
 
 
