@@ -1,7 +1,7 @@
 # PaginaCurricular
 ## Esta es mi propia **página web**
 ---------
-##### Hacerla _bonita_, _presentable_ y _fácil de entender_ era mi objetivo principal en mente, pues sirve a modo de presentación de mi imagen a todo aquel interesado en como soy yo y mi cuál es mi metodología.
+##### Hacerla _bonita_, _presentable_ y _fácil de entender_ era mi objetivo principal en mente, pues sirve a modo de presentación de mi imagen a todo aquel interesado en como soy yo y cuál es mi metodología.
 ---------
 ## Objetivos
 * Mostrar mis habilidades de programación.
