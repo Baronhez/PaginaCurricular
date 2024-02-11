@@ -1,26 +1,22 @@
 # PaginaCurricular
-## Esta es mi propia **página web**
+## Esta FUE mi propia página web
 ---------
-##### Hacerla _bonita_, _presentable_ y _fácil de entender_ era mi objetivo principal en mente, pues sirve a modo de presentación de mi imagen a todo aquel interesado en como soy yo y cuál es mi metodología.
+##### Este proyecto lo comencé cuando estaba en cuarentena enfermo de covid, mientras estudiaba administración de sistemas. Me sirvió como entretenimiento aprender HTML, CSS y JS a un nivel básico. También fue el comienzo de aprender como funcionaban los certificados SSL/TLS.
 ---------
 ## Objetivos
-* Mostrar mis habilidades de programación.
-* Mostrar mis trabajos previos de diseño.
-* Mostrar mis habilidades como FrontEnd developer.
-  * Mediante demostración práctica en la propia página.
-  * Mediante presentación de otros proyectos.
+* Aprender a desarrollar una página web básica, con algunas tonterías, efectos y animaciones, que aunque innecesarias, quedasen bonitas.
+* Mostrar lo poco que aprendí de composición gráfica en photoshop durante los primeros meses de pandemia, cuando decidí abandonar la universidad.
+* Mostrar mis escasas habilidades como programador web.
 ---------
->Esto solo es una carta de presentación, ergo, no aparece todo lo que aprendo día a día, sino tan solo una pequeña muestra de mi desarrollo.
+>Esta página fue reemplazada por mi página actual, la cual hice con Astro en un par de noches. Es mucho mejor en términos de estilo, accesibilidad y performance. Ya no es selfhosted, sino que se encuentra hosteada en github pages.
 ---------
 ## Email de contacto
 <jonathanrodenaslopez1@gmail.com> 
 ---------
-## URL to the webpage
-<loremipsum> 
- -
-O este enlace si lo prefieres https://jonthan.xyz/
+## URL de mi página web actual
+https://jonthan.xyz/
 
-## My webpage appareance
+## La apariencia de la primera versión de mi primera página web
 
 ![imagen](https://user-images.githubusercontent.com/57847247/133019347-2977d8d8-3c44-4098-8509-0d12e795446c.png)
  
